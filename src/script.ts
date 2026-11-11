@@ -7,6 +7,22 @@ class Emplyee {
   }
 }
 const employee = new Emplyee("abir", 20);
-const employee2 = new Emplyee("Nahid", 23);
-console.log(employee instanceof Emplyee);
-console.log(employee2 instanceof Emplyee);
+
+employee.name = "mdna";
+employee.age = 5000; // need to prevent this
+console.log(employee.age);
+
+//  TypeScript shorthand and uses of access modifier
+// public, 
+// private
+// protected
+// readonly
+// public readonly
+
+
+class Emplyee2 {
+  constructor(
+    public name: string,
+    public readonly salary: number,
+  ) {}
+}
